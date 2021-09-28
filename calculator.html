@@ -26,8 +26,8 @@
 			width: 70px;
 			height: 70px;
 			margin-left: 41px;
-			margin-top: 75px;
-			margin-bottom: 385px;
+			margin-top: 115px;
+			margin-bottom: 345px;
 			background-color: #FFF6DB;
 			border: 6px solid #00324D ;
 			color: #7CA4AE;
@@ -58,6 +58,8 @@
 			border: 6px solid #00324D ;
 			color: white;
 			font-size: 20px;
+			font-family: 'Kanit', sans-serif;
+			font-weight: 900;
 			border-radius: 50%;
 			transform: rotate(45deg);
 			position: relative;
@@ -70,7 +72,49 @@
 			color: #FFF6DB; 
 		}
 		
+		.clear {
+			width: 70px;
+			height: 70px;
+			top: 73px;
+			left: 40px;
+			background-color: #FFF6DB;
+			border: 6px solid #00324D ;
+			color: #D71A21;
+			font-size: 20px;
+			font-family: 'Kanit', sans-serif;
+			font-weight: 900;
+			border-radius: 50%;
+			position: relative;
+			z-index: 1050;
+			box-shadow: 0 0 0 6px #7CA4AE, 0 0 0 9px #00324D;
+		}
 		
+		.clear:hover {
+			background-color: #D71A21;
+			color: white;
+		}
+		
+		.equal {
+			color: #00324D;
+			width: 70px;
+			height: 70px;
+			top: 73px;
+			left: 83px;
+			background-color: #FFF6DB;
+			border: 6px solid #00324D ;
+			font-size: 20px;
+			font-family: 'Kanit', sans-serif;
+			font-weight: 900;
+			border-radius: 50%;
+			position: relative;
+			z-index: 1050;
+			box-shadow: 0 0 0 6px #7CA4AE, 0 0 0 9px #00324D;
+		}
+		
+		.equal:hover {
+			background-color: #7CA4AE;
+			color: white;
+		}
 		
 		
 		.blank {
@@ -89,7 +133,7 @@
 			width: 70px;
 			height: 70px;
 			position: relative;
-			top: 25px;
+			top: 28px;
 			margin-left: 40px;
 			background-color: #FFF6DB;
 			border: 6px solid#00324D;
@@ -109,7 +153,7 @@
 			top: 0;
 			transform: rotate(-45deg);
 			margin-top: 20px;
-			margin-left: 737px;
+			margin-left: 755px;
 			z-index: 200;
 		}
 		
@@ -139,8 +183,8 @@
 		
 		/*center base of element*/
 		#myCalculator {
-			margin-top: calc(0px - 530px);
-			margin-left: 0px;
+			margin-top: calc(0px - 570px);
+			margin-left: -10px;
 		}
 		
 		
@@ -215,18 +259,18 @@
 		
 		.line-3 {
 			background-color: #00324D;
-			width: 1200px;
+			width: 1000px;
 			height: 10px;
-			margin-left: -245px;
+			margin-left: -148px;
 			margin-top: 5px;
 			transform: rotate(45deg);
 		}
 		
 		.line-4 {
 			background-color: #00324D;
-			width: 1200px;
+			width: 1000px;
 			height: 10px;
-			margin-left: -382px;
+			margin-left: -280px;
 			margin-top: -20px;
 			transform: rotate(45deg);
 		}
@@ -473,9 +517,9 @@
 			
 		<input type="button" class="blank" value="" onClick="calculator.display.value +=''"> 
 			
-		<input type="button" class="number" value="C" onClick="calculator.display.value =''">
+		<input type="button" class="clear" value="C" onClick="calculator.display.value =''">
 		
-		<input type="button" class="number" name="equation" value="   =   " onClick="calculator.display.value = eval(calculator.display.value)">
+		<input type="button" class="equal" name="equation" value="   =   " onClick="calculator.display.value = eval(calculator.display.value)">
 		
 	
 			
