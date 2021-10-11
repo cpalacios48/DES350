@@ -1,0 +1,918 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width initial-scale=1">
+</head>
+	
+<body>
+	<style>
+		
+		body {
+			background-color: #D4D4D4;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		}
+		
+		
+		.p {
+			font-size: 40px;
+			
+		}
+		
+		
+		.square {
+			position:fixed;
+			top: 0;
+			bottom: 0;
+			width: 195px;
+			height: 1015px;
+			background-color: #D4D4D4;
+			margin-left: 802px;
+			margin-top: 0px;
+			z-index: 10;
+		}
+		
+		.square-2 {
+			position:fixed;
+			top: 0;
+			bottom: 0;
+			width: 200px;
+			height: 1015px;
+			background-color: #D4D4D4;
+			margin-left: 864px;
+			margin-top: 0px;
+			z-index: 100;
+		}
+		
+		.circle-2 {
+			position: fixed;
+			top: 640px;
+			left: 0;
+			margin-left: 185px;
+			width: 130px;
+			height: 240px;
+			background: #FAFAFA;
+			border-radius: 150px 0px 0px 150px;
+		}
+		
+		.circle-3 {
+			position: fixed;
+			right: 15%;
+			width: 100px;
+			height: 200px;
+			background: #FAFAFA;
+			border-radius: 0px 150px 150px 0px;
+			margin-top: 150px;
+			z-index: 101;
+		}
+		
+		.circle-4 {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 150px;
+			height: 300px;
+			margin-top: 50px;
+			background: #FAFAFA;
+			border-radius: 0px 150px 150px 0px;
+			
+		}
+		
+		.circle-5 {
+				position: fixed;
+			top: 0;
+			right: 0;
+			margin-top: 700px;
+			width: 130px;
+			height: 240px;
+			background: #FAFAFA;
+			border-radius: 150px 0px 0px 150px;
+			z-index: 101;
+		}
+		
+		.home {
+			position: relative;
+			top: 0;
+		}
+		
+		.home h1 {
+			font-size: 400px;
+			right: 50%;
+			margin-top: 5px;
+			font-kerning: 30%;
+			color: #F2AC0F;
+			letter-spacing: -56px;
+			position: absolute;
+			z-index: 0;
+		}
+		
+		.home h2 {
+			position: absolute;
+			top: 0;
+			font-size: 55px;
+			margin-top: 440px;
+			margin-left: 2px;
+			font-weight: bold;
+			letter-spacing: -3px;
+		}
+		
+		.home h3 {
+			position: fixed;
+			top: 0;
+			margin-top: 500px;
+			font-size: 55px;
+			margin-left: 2px;
+			font-weight: bold;
+			z-index: 11;
+			letter-spacing: -3px;
+		}
+		
+		
+		
+		
+		
+		
+		.one-design {
+			position: relative;
+			top: 1000px;
+		}
+		
+		
+		.one-design h1 {
+			position: absolute;
+			bottom: 0;
+			margin-bottom: -480px;
+			font-size: 570px;
+			right: 45%;
+			font-kerning: 30%;
+			color: #F2AC0F;
+			z-index: 0;
+		}
+		
+		
+		
+		.one-design h3 {
+			position: relative;
+			bottom: -520px;
+			right: 0;
+			margin-left: 320px;
+			font-size: 55px;
+			font-weight: bold;
+			letter-spacing: -3px;
+			z-index: 1;
+		}
+		
+		.one-design p {
+				position: absolute;
+			right: 170px;
+			bottom: 0;
+			margin-bottom: -180px;
+			font-size: 19px;
+			margin-left: 1080px;
+			width: 415px;
+			z-index: 102;
+			font-weight: 300;
+		}
+		
+		
+		
+		
+		
+		
+		
+	
+		
+		.two-design {
+			position: relative;
+			top: 1700px;
+		}
+		
+		
+		.two-design h1 {
+			position: absolute;
+			bottom: 0;
+			margin-bottom: -480px;
+			font-size: 570px;
+			right: 45%;
+			font-kerning: 30%;
+			color: #F2AC0F;
+			z-index: 0;
+		}
+		
+		
+		
+		.two-design h3 {
+			position: relative;
+			bottom: -520px;
+			right: 0;
+			margin-left: 320px;
+			font-size: 55px;
+			font-weight: bold;
+			letter-spacing: -3px;
+			z-index: 1;
+		}
+		
+		.two-design p {
+				position: absolute;
+			right: 170px;
+			bottom: 0;
+			margin-bottom: -180px;
+			font-size: 19px;
+			margin-left: 1080px;
+			width: 415px;
+			z-index: 102;
+			font-weight: 300;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		.three-design {
+			position: absolute;
+			top: 600px;
+		}
+		
+			.three-design h1 {
+			margin-top: 2050px;
+			position: relative;
+			bottom: 0;
+			margin-bottom: -480px;
+			font-size: 570px;
+			margin-left: 964px;
+			font-kerning: 30%;
+			color: #F2AC0F;
+			z-index: 10;
+		}
+		
+		
+		.three-design h3 {
+			position: relative;
+			bottom: 0;
+			top: 500px;
+			right: 0;
+			margin-left: 330px;
+			font-size: 57px;
+			font-weight: bold;
+			letter-spacing: -3px;
+		}
+		
+		.three-design p {
+			position: absolute;
+			left: 320px;
+			bottom: 0;
+			margin-bottom: 90px;
+			font-size: 19px;
+			width: 415px;
+			font-weight: 300;
+			z-index: 103;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		.four-design {
+			position: relative;
+			top: 2800px;
+		}
+		
+		.four-design h1 {
+			position: relative;
+			bottom: 0;
+			margin-bottom: -480px;
+			font-size: 570px;
+			margin-left: 590px;
+			font-kerning: 30%;
+			color: #F2AC0F;
+			z-index: 0;
+		}
+		
+		
+		
+		.four-design h3 {
+			position: relative;
+			bottom: 0;
+			top: 500px;
+			right: 0;
+			margin-left: 330px;
+			font-size: 57px;
+			font-weight: bold;
+			letter-spacing: -3px;
+		}
+		
+		.four-design p {
+			position: absolute;
+			right: 170px;
+			bottom: 0;
+			margin-bottom: -150px;
+			font-size: 19px;
+			margin-left: 1080px;
+			width: 415px;
+			z-index: 102;
+			font-weight: 300;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		.five-design {
+			position: absolute;
+			top: 2300px;
+		}
+		
+		.five-design h1 {
+			margin-top: 2050px;
+			position: relative;
+			bottom: 0;
+			margin-bottom: -480px;
+			font-size: 570px;
+			margin-left: 964px;
+			font-kerning: 30%;
+			color: #F2AC0F;
+		}
+		
+
+		
+		.five-design h3 {
+			position: relative;
+			bottom: 0;
+			top: 500px;
+			right: 0;
+			margin-left: 330px;
+			font-size: 57px;
+			font-weight: bold;
+			letter-spacing: -3px;
+		}
+		
+		.five-design p {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			margin-bottom: 90px;
+			font-size: 19px;
+			margin-left: 330px;
+			width: 415px;
+			font-weight: 300;
+			z-index: 101;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		.six-design {
+			position: relative;
+			top: 2000px;
+		}
+		
+		
+		.six-design h1 {
+			margin-top: 2050px;
+			position: relative;
+			bottom: 0;
+			margin-bottom: -480px;
+			font-size: 570px;
+			margin-left: 964px;
+			font-kerning: 30%;
+			color: #F2AC0F;
+		}
+		
+		
+		
+		.six-design h3 {
+			position: relative;
+			bottom: 0;
+			top: 500px;
+			right: 0;
+			margin-left: 330px;
+			font-size: 57px;
+			font-weight: bold;
+			letter-spacing: -3px;
+		}
+		
+		.six-design p {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			margin-bottom: 80px;
+			font-size: 19px;
+			margin-left: 330px;
+			width: 415px;
+			font-weight: 300;
+			z-index: 101;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			.seven-design {
+			position: relative;
+			top: 1950px;
+		}
+		
+		
+		.seven-design h1 {
+			position: relative;
+			bottom: 0;
+			margin-bottom: -480px;
+			font-size: 570px;
+			margin-left: 604px;
+			font-kerning: 30%;
+			color: #F2AC0F;
+			z-index: 0;
+		}
+		
+
+		
+		
+		.seven-design h3 {
+			position: relative;
+			bottom: 0;
+			top: 500px;
+			right: 0;
+			margin-left: 330px;
+			font-size: 57px;
+			font-weight: bold;
+			letter-spacing: -3px;
+		}
+		
+		.seven-design p {
+			position: absolute;
+			right: 170px;
+			bottom: 0;
+			margin-bottom: -150px;
+			font-size: 19px;
+			margin-left: 1080px;
+			width: 415px;
+			z-index: 102;
+			font-weight: 300;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		.eight-design {
+			position: relative;
+			top: 2000px;
+		}
+		
+		.eight-design h1 {
+			position: relative;
+			bottom: 0;
+			margin-bottom: -480px;
+			font-size: 570px;
+			margin-left: 954px;
+			font-kerning: 30%;
+			color: #F2AC0F;
+			z-index: 0;
+		}
+		
+
+		
+		
+		.eight-design h3 {
+			position: relative;
+			bottom: 0;
+			top: 500px;
+			margin-left: 320px;
+			font-size: 57px;
+			font-weight: bold;
+			letter-spacing: -3px;
+			z-index: 1;
+			letter-spacing: -3px;
+		}
+		
+		.eight-design p {
+			position: absolute;
+			right: 930px;
+			bottom: 0;
+			font-weight: 300;
+			margin-bottom: 140px;
+			font-size: 19px;
+			margin-left: 325px;
+			width: 404px;
+			z-index: 101;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		.nine-design {
+			position: relative;
+			top: 0px;
+		}
+		
+		.nine-design h1 {
+			margin-top: 1990px;
+			position: relative;
+			top: -90px;
+			bottom: 0;
+			margin-bottom: -470px;
+			font-size: 570px;
+			margin-left: 570px;
+			letter-spacing: -89px;
+			color: #F2AC0F;
+		}
+		
+		
+		
+		.nine-design h3 {
+			position: relative;
+			bottom: 0;
+			top: 500px;
+			right: 0;
+			margin-left: 330px;
+			font-size: 57px;
+			font-weight: bold;
+			letter-spacing: -3px;
+		}
+		
+		.nine-design p {
+			position: absolute;
+			right: 170px;
+			bottom: 0;
+			margin-bottom: -150px;
+			font-size: 19px;
+			margin-left: 1080px;
+			width: 415px;
+			z-index: 102;
+			font-weight: 300;
+		}
+		
+		
+	.ten-design {
+			position: relative;
+			top: 520px;
+		}
+		
+		.ten-design h1 {
+			
+			position: relative;
+			top: -160px;
+			bottom: 0;
+			margin-bottom: -470px;
+			font-size: 570px;
+			margin-left: 410px;
+			letter-spacing: -89px;
+			color: #F2AC0F;
+			
+		}
+		
+		
+		
+		.ten-design h3 {
+			position: relative;
+			bottom: 0;
+			top: 500px;
+			right: 0;
+			margin-left: 330px;
+			font-size: 57px;
+			font-weight: bold;
+			letter-spacing: -3px;
+		}
+		
+		.ten-design p {
+			position: absolute;
+			right: 170px;
+			bottom: 0;
+			margin-bottom: -150px;
+			font-size: 19px;
+			margin-left: 1080px;
+			width: 415px;
+			z-index: 102;
+			font-weight: 300;
+		}
+		
+		.half-circle {
+			width: 480px;
+			height: 480px;
+			margin-left: 693px;
+			position: fixed;
+			top: 0;
+			margin-top: 240px;
+			z-index: 102;
+		}
+		
+		
+	
+		
+		
+		@media only screen and (max-width: 800px) {
+			
+		/*------- Circle Shapes ------*/
+			
+		.square {
+			width: 195px;
+			height: 1015px;
+			background-color: #D4D4D4;
+			margin-left: 802px;
+			margin-top: 0px;
+			z-index: 10;
+		}
+		
+		.square-2 {
+			width: 200px;
+			height: 1015px;
+			background-color: #D4D4D4;
+			margin-left: 864px;
+			margin-top: 0px;
+			z-index: 100;
+		}
+			
+		.half-circle {
+			width: 240px;
+			height: 240px;
+			margin-left: 595px;
+			position: fixed;
+			top: 0;
+			margin-top: 240px;
+			z-index: 102;
+		}	
+			
+		.circle-2 {
+			top: 640px;
+			margin-left: 170px;
+			width: 80px;
+			height: 135px;
+			background: #FAFAFA;
+			border-radius: 150px 0px 0px 150px;
+		}
+		
+		.circle-3 {
+			position: fixed;
+			right: 15%;
+			width: 100px;
+			height: 200px;
+			background: #FAFAFA;
+			border-radius: 0px 150px 150px 0px;
+			margin-top: 150px;
+			z-index: 101;
+		}
+		
+		.circle-4 {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 150px;
+			height: 300px;
+			margin-top: 50px;
+			background: #FAFAFA;
+			border-radius: 0px 150px 150px 0px;
+			
+		}
+		
+		.circle-5 {
+				position: fixed;
+			top: 0;
+			right: 0;
+			margin-top: 700px;
+			width: 130px;
+			height: 240px;
+			background: #FAFAFA;
+			border-radius: 150px 0px 0px 150px;
+			z-index: 101;
+		}	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		/*<!--First page-->*/
+			
+			
+		.home h1 {
+			font-size: 200px;	
+			}
+			
+		.home h2 {
+			font-size: 27px;
+			margin-top: 440px;
+			letter-spacing: -2px;
+		}
+		
+		.home h3 {
+			margin-top: 500px;
+			font-size: 27px;
+			letter-spacing: -2px;
+		}
+					
+					
+					
+	/*-------Design 1--------*/
+					
+		.one-design {
+			position: absolute;
+			bottom: 0;
+			margin-bottom: 0px;
+		}
+			
+		.one-design h1 {
+			
+			margin-bottom: -480px;
+			font-size: 285px;
+			margin-left: 540px;
+			font-kerning: 30%;
+		}
+		
+		
+		
+		.one-design h3 {
+			top: 700px;
+			margin-left: 260px;
+			font-size: 27px;
+			letter-spacing: -1px;
+			z-index: 1;
+		}
+		
+		.one-design p {
+			font-size: 16px;
+			font-weight: 300;
+			margin-left: 280px;
+			width: 404px;
+			z-index: 105;
+		}
+		
+		}
+		
+		
+		
+		
+		
+		@media only screen and (max-width: 570px) {
+			
+			.one-design h3 {
+			top: 700px;
+			margin-left: 160px;
+			font-size: 27px;
+			letter-spacing: -1px;
+			z-index: 1;
+		}
+		
+		.one-design p {
+			margin-bottom: -620px;
+			font-size: 12px;
+			font-weight: 300;
+			
+			width: 300px;
+			z-index: 105;
+		}
+		}
+	
+	</style>
+	
+	
+<div class="circle-columns">
+	<div class="circle"></div>
+	<div class="square"></div>
+	<div class="square-2"></div>
+	<div class="circle-2"></div>
+	<div class="circle-3"></div>
+	<div class="circle-4"></div>
+	<div class="circle-5"></div>
+	</div>
+	
+	
+	<img class="half-circle" src="half-circle-41.svg" alt="">
+	
+	<div class="home">
+	<h1>10</h1>
+	<h2>Principles for</h2> 
+	<h3>Good Design</h3>
+	<br>
+	</div>
+	
+	
+	<div class="one-design">
+	<div class="square-3"></div>
+	<h1>1</h1>
+	<h3>communicates well</h3>
+	<p>Design tells the viewer what the function of the design is just by looking at. The viewer does not get confused while looking at the product, the product should automatically say what it is. </p>
+	</div>
+<br>
+	
+	
+	<div class="two-design">
+	<h1>2</h1>
+	<h3>is simple</h3>
+	<p>Design should be easy and straightfoward for what it's used for. The product is not filled with many uncessary essentials.</p>
+	<br>
+	</div>
+	
+	
+	
+	<div class="three-design">
+	<div class="number-half"></div>
+	<h1>3</h1>
+	<h3>is functionable</h3>
+	<p>Design work should be used without any issues. Focuses more on functionability rather than the appearance itself.</p>
+	<br>
+	</div>
+	
+	
+	
+    <br>
+	<div class="four-design">
+	<h1>4</h1>
+	<h3>is an eyecatcher</h3>
+	<p>The design work catches the eye of the viewer and making the viewer want to buy it. </p>
+	<br>
+	</div>
+	
+	
+	
+	<div class="five-design">
+	<h1>5</h1>
+	<h3>is emotional</h3>
+	<p>We start to get attached to the design work itself, an example could be a wallet, we take our wallet everywhere and use it for many years, so the design work sticks with us. </p>
+	</div>
+		
+	
+	
+	
+	<div class="six-design">
+	<h1>6</h1>
+	<h3>is sustainable</h3>
+	<p>Design work would last for a long time for the user to use without any problems. </p>
+	</div>
+	
+	
+	
+	
+<div class="seven-design">
+	<h1>7</h1>
+	<h3>is useful</h3>
+	<p>Design works in many ways not just functional but also aestheticaly, it helps keep away any problems the product has. </p>
+  <br>
+	</div>
+	
+	
+	<div class="eight-design">
+	<h1>8</h1>
+	<h3>is convenient</h3>
+	<p>Design product is necessary on certain occasions, usually when someone needs to use or wear a design product, they can count on the product itself.</p>
+	</div>
+	<br>
+	
+	
+	<div class="nine-design">
+	<h1>9</h1>
+	<h3>is honest</h3>
+	<p>Design product stays consistent and works functionally with what it promises to do, it doesn not try to make the product more powerful or innovative than what it already is.</p>
+	</div>
+	
+	
+	
+	<div class="ten-design">
+	<h1>10</h1>
+	<h3>is fun</h3>
+	<p>The whole design works functionally, it's neat, and has an aesthetic feel to it. You are pleased to use the design work because of how it looks and how it works.</p>
+	</div>
+	
+</body>
+</html>
