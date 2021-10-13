@@ -28,7 +28,7 @@
 			width: 195px;
 			height: 1015px;
 			background-color: #D4D4D4;
-			margin-left: 802px;
+			right: 656px;
 			margin-top: 0px;
 			z-index: 10;
 		}
@@ -37,10 +37,10 @@
 			position:fixed;
 			top: 0;
 			bottom: 0;
-			width: 200px;
+			width: 195px;
 			height: 1015px;
 			background-color: #D4D4D4;
-			margin-left: 864px;
+			right: 589px;
 			margin-top: 0px;
 			z-index: 100;
 		}
@@ -48,12 +48,13 @@
 		.circle-2 {
 			position: fixed;
 			top: 640px;
-			left: 0;
+
 			margin-left: 185px;
 			width: 130px;
 			height: 240px;
 			background: #FAFAFA;
 			border-radius: 150px 0px 0px 150px;
+			z-index: 101;
 		}
 		
 		.circle-3 {
@@ -76,6 +77,7 @@
 			margin-top: 50px;
 			background: #FAFAFA;
 			border-radius: 0px 150px 150px 0px;
+			z-index: -1;
 			
 		}
 		
@@ -88,7 +90,18 @@
 			height: 240px;
 			background: #FAFAFA;
 			border-radius: 150px 0px 0px 150px;
-			z-index: 101;
+
+			
+		}
+		
+			.half-circle {
+			width: 480px;
+			height: 480px;
+			position: fixed;
+			top: 0;
+			right: 480px;
+			margin-top: 240px;
+			z-index: 102;
 		}
 		
 		.home {
@@ -98,7 +111,7 @@
 		
 		.home h1 {
 			font-size: 400px;
-			right: 50%;
+			right: 780px;
 			margin-top: 5px;
 			font-kerning: 30%;
 			color: #F2AC0F;
@@ -115,6 +128,7 @@
 			margin-left: 2px;
 			font-weight: bold;
 			letter-spacing: -3px;
+			z-index: 105;
 		}
 		
 		.home h3 {
@@ -126,6 +140,7 @@
 			font-weight: bold;
 			z-index: 11;
 			letter-spacing: -3px;
+			z-index: 105;
 		}
 		
 		
@@ -135,16 +150,15 @@
 		
 		.one-design {
 			position: relative;
-			top: 1000px;
+			top: 950px;
 		}
 		
 		
 		.one-design h1 {
 			position: absolute;
-			bottom: 0;
-			margin-bottom: -480px;
+			top: -480px;
 			font-size: 570px;
-			right: 45%;
+			right: 740px;
 			font-kerning: 30%;
 			color: #F2AC0F;
 			z-index: 0;
@@ -160,16 +174,14 @@
 			font-size: 55px;
 			font-weight: bold;
 			letter-spacing: -3px;
-			z-index: 1;
+			z-index: 105;
 		}
 		
 		.one-design p {
 				position: absolute;
-			right: 170px;
-			bottom: 0;
-			margin-bottom: -180px;
+			right: 150px;
+			top: 600px;
 			font-size: 19px;
-			margin-left: 1080px;
 			width: 415px;
 			z-index: 102;
 			font-weight: 300;
@@ -185,7 +197,7 @@
 		
 		.two-design {
 			position: relative;
-			top: 1700px;
+			top: 1800px;
 		}
 		
 		
@@ -194,7 +206,7 @@
 			bottom: 0;
 			margin-bottom: -480px;
 			font-size: 570px;
-			right: 45%;
+			right: 740px;
 			font-kerning: 30%;
 			color: #F2AC0F;
 			z-index: 0;
@@ -210,16 +222,15 @@
 			font-size: 55px;
 			font-weight: bold;
 			letter-spacing: -3px;
-			z-index: 1;
+			z-index: 105;
 		}
 		
 		.two-design p {
 				position: absolute;
-			right: 170px;
-			bottom: 0;
+			right: 150px;
+			top: 600px;
 			margin-bottom: -180px;
 			font-size: 19px;
-			margin-left: 1080px;
 			width: 415px;
 			z-index: 102;
 			font-weight: 300;
@@ -238,38 +249,38 @@
 		
 		
 		.three-design {
-			position: absolute;
-			top: 600px;
+			position: relative;
+			top: 2730px;
 		}
 		
 			.three-design h1 {
-			margin-top: 2050px;
-			position: relative;
+			position: absolute;
 			bottom: 0;
-			margin-bottom: -480px;
+			margin-bottom: -350px;
 			font-size: 570px;
-			margin-left: 964px;
+			right: 370px;
 			font-kerning: 30%;
 			color: #F2AC0F;
-			z-index: 10;
+			z-index: 0;
 		}
 		
 		
 		.three-design h3 {
 			position: relative;
 			bottom: 0;
-			top: 500px;
+			top: 300px;
 			right: 0;
 			margin-left: 330px;
 			font-size: 57px;
 			font-weight: bold;
 			letter-spacing: -3px;
+			z-index: 105;
 		}
 		
 		.three-design p {
 			position: absolute;
-			left: 320px;
-			bottom: 0;
+			bottom: -600px;
+			margin-left: 330px;
 			margin-bottom: 90px;
 			font-size: 19px;
 			width: 415px;
@@ -286,15 +297,15 @@
 		
 		.four-design {
 			position: relative;
-			top: 2800px;
+			top: 3360px;
 		}
 		
 		.four-design h1 {
-			position: relative;
+			position: absolute;
 			bottom: 0;
-			margin-bottom: -480px;
+			margin-bottom: -440px;
 			font-size: 570px;
-			margin-left: 590px;
+			right: 755px;
 			font-kerning: 30%;
 			color: #F2AC0F;
 			z-index: 0;
@@ -311,13 +322,13 @@
 			font-size: 57px;
 			font-weight: bold;
 			letter-spacing: -3px;
+			z-index: 105;
 		}
 		
 		.four-design p {
 			position: absolute;
-			right: 170px;
-			bottom: 0;
-			margin-bottom: -150px;
+			right: 150px;
+			bottom: -550px;
 			font-size: 19px;
 			margin-left: 1080px;
 			width: 415px;
@@ -336,19 +347,19 @@
 		
 		
 		.five-design {
-			position: absolute;
-			top: 2300px;
+			position: relative;
+			top: 4500px;
 		}
 		
 		.five-design h1 {
-			margin-top: 2050px;
-			position: relative;
+			position: absolute;
 			bottom: 0;
-			margin-bottom: -480px;
+			margin-bottom: -350px;
 			font-size: 570px;
-			margin-left: 964px;
+			right: 390px;
 			font-kerning: 30%;
 			color: #F2AC0F;
+			z-index: 0;
 		}
 		
 
@@ -356,24 +367,23 @@
 		.five-design h3 {
 			position: relative;
 			bottom: 0;
-			top: 500px;
+			top: 300px;
 			right: 0;
 			margin-left: 330px;
 			font-size: 57px;
 			font-weight: bold;
 			letter-spacing: -3px;
+			z-index: 105;
 		}
 		
 		.five-design p {
 			position: absolute;
-			left: 0;
-			bottom: 0;
-			margin-bottom: 90px;
+			bottom: -600px;
 			font-size: 19px;
 			margin-left: 330px;
 			width: 415px;
 			font-weight: 300;
-			z-index: 101;
+			z-index: 105;
 		}
 		
 		
@@ -386,19 +396,19 @@
 		
 		.six-design {
 			position: relative;
-			top: 2000px;
+			top: 5400px;
 		}
 		
 		
 		.six-design h1 {
-			margin-top: 2050px;
-			position: relative;
+			position: absolute;
 			bottom: 0;
-			margin-bottom: -480px;
+			margin-bottom: -320px;
 			font-size: 570px;
-			margin-left: 964px;
+			right: 390px;
 			font-kerning: 30%;
 			color: #F2AC0F;
+			z-index: 0;
 		}
 		
 		
@@ -406,24 +416,24 @@
 		.six-design h3 {
 			position: relative;
 			bottom: 0;
-			top: 500px;
+			top: 300px;
 			right: 0;
 			margin-left: 330px;
 			font-size: 57px;
 			font-weight: bold;
 			letter-spacing: -3px;
+			z-index: 105;
 		}
 		
 		.six-design p {
 			position: absolute;
-			left: 0;
 			bottom: 0;
-			margin-bottom: 80px;
+			bottom: -600px;
 			font-size: 19px;
 			margin-left: 330px;
 			width: 415px;
 			font-weight: 300;
-			z-index: 101;
+			z-index: 105;
 		}
 		
 		
@@ -439,16 +449,16 @@
 		
 			.seven-design {
 			position: relative;
-			top: 1950px;
+			top: 6050px;
 		}
 		
 		
 		.seven-design h1 {
-			position: relative;
+			position: absolute;
 			bottom: 0;
 			margin-bottom: -480px;
 			font-size: 570px;
-			margin-left: 604px;
+			right: 755px;
 			font-kerning: 30%;
 			color: #F2AC0F;
 			z-index: 0;
@@ -466,15 +476,14 @@
 			font-size: 57px;
 			font-weight: bold;
 			letter-spacing: -3px;
+			z-index: 105;
 		}
 		
 		.seven-design p {
 			position: absolute;
-			right: 170px;
-			bottom: 0;
-			margin-bottom: -150px;
+			right: 150px;
+			bottom: -550px;
 			font-size: 19px;
-			margin-left: 1080px;
 			width: 415px;
 			z-index: 102;
 			font-weight: 300;
@@ -489,15 +498,15 @@
 		
 		.eight-design {
 			position: relative;
-			top: 2000px;
+			top: 7050px;
 		}
 		
 		.eight-design h1 {
-			position: relative;
+		position: absolute;
 			bottom: 0;
-			margin-bottom: -480px;
+			margin-bottom: -320px;
 			font-size: 570px;
-			margin-left: 954px;
+			right: 390px;
 			font-kerning: 30%;
 			color: #F2AC0F;
 			z-index: 0;
@@ -509,21 +518,20 @@
 		.eight-design h3 {
 			position: relative;
 			bottom: 0;
-			top: 500px;
+			top: 300px;
 			margin-left: 320px;
 			font-size: 57px;
 			font-weight: bold;
 			letter-spacing: -3px;
 			z-index: 1;
 			letter-spacing: -3px;
+			z-index: 105;
 		}
 		
 		.eight-design p {
 			position: absolute;
-			right: 930px;
-			bottom: 0;
+			bottom: -600px;
 			font-weight: 300;
-			margin-bottom: 140px;
 			font-size: 19px;
 			margin-left: 325px;
 			width: 404px;
@@ -540,19 +548,18 @@
 		
 		.nine-design {
 			position: relative;
-			top: 0px;
+			top: 7700px;
 		}
 		
 		.nine-design h1 {
-			margin-top: 1990px;
-			position: relative;
-			top: -90px;
+			position: absolute;
 			bottom: 0;
-			margin-bottom: -470px;
+			margin-bottom: -520px;
 			font-size: 570px;
-			margin-left: 570px;
-			letter-spacing: -89px;
+			right: 745px;
+			font-kerning: 30%;
 			color: #F2AC0F;
+			z-index: 0;
 		}
 		
 		
@@ -566,13 +573,13 @@
 			font-size: 57px;
 			font-weight: bold;
 			letter-spacing: -3px;
+			z-index: 105;
 		}
 		
 		.nine-design p {
 			position: absolute;
-			right: 170px;
-			bottom: 0;
-			margin-bottom: -150px;
+			right: 150px;
+			bottom: -625px;
 			font-size: 19px;
 			margin-left: 1080px;
 			width: 415px;
@@ -583,225 +590,682 @@
 		
 	.ten-design {
 			position: relative;
-			top: 520px;
+			top: 9050px;
 		}
 		
 		.ten-design h1 {
 			
-			position: relative;
-			top: -160px;
+		position: absolute;
 			bottom: 0;
-			margin-bottom: -470px;
-			font-size: 570px;
-			margin-left: 410px;
+			margin-bottom: -200px;
+			font-size: 560px;
+			right: 770px;
 			letter-spacing: -89px;
 			color: #F2AC0F;
+			z-index: 0;
 			
 		}
 		
 		
 		
 		.ten-design h3 {
-			position: relative;
-			bottom: 0;
-			top: 500px;
-			right: 0;
-			margin-left: 330px;
+			position: absolute;
+			bottom: -698px;
+			top: 70px;
+			margin-left: 325px;
 			font-size: 57px;
 			font-weight: bold;
 			letter-spacing: -3px;
+			z-index: 116;
 		}
 		
 		.ten-design p {
 			position: absolute;
-			right: 170px;
-			bottom: 0;
-			margin-bottom: -150px;
+			right: 150px;
+			bottom: -325px;
 			font-size: 19px;
-			margin-left: 1080px;
 			width: 415px;
 			z-index: 102;
 			font-weight: 300;
 		}
 		
-		.half-circle {
-			width: 480px;
-			height: 480px;
-			margin-left: 693px;
-			position: fixed;
-			top: 0;
-			margin-top: 240px;
-			z-index: 102;
-		}
 		
 		
-	
-		
-		
-		@media only screen and (max-width: 800px) {
+		@media only screen and (max-width: 1080px) {
 			
-		/*------- Circle Shapes ------*/
-			
-		.square {
-			width: 195px;
-			height: 1015px;
-			background-color: #D4D4D4;
-			margin-left: 802px;
-			margin-top: 0px;
-			z-index: 10;
-		}
-		
-		.square-2 {
-			width: 200px;
-			height: 1015px;
-			background-color: #D4D4D4;
-			margin-left: 864px;
-			margin-top: 0px;
-			z-index: 100;
-		}
-			
-		.half-circle {
-			width: 240px;
-			height: 240px;
-			margin-left: 595px;
-			position: fixed;
-			top: 0;
-			margin-top: 240px;
-			z-index: 102;
-		}	
-			
-		.circle-2 {
-			top: 640px;
-			margin-left: 170px;
-			width: 80px;
-			height: 135px;
-			background: #FAFAFA;
-			border-radius: 150px 0px 0px 150px;
-		}
-		
-		.circle-3 {
-			position: fixed;
-			right: 15%;
-			width: 100px;
-			height: 200px;
-			background: #FAFAFA;
-			border-radius: 0px 150px 150px 0px;
-			margin-top: 150px;
-			z-index: 101;
-		}
-		
-		.circle-4 {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 150px;
-			height: 300px;
-			margin-top: 50px;
-			background: #FAFAFA;
-			border-radius: 0px 150px 150px 0px;
-			
-		}
-		
-		.circle-5 {
-				position: fixed;
-			top: 0;
-			right: 0;
-			margin-top: 700px;
-			width: 130px;
-			height: 240px;
-			background: #FAFAFA;
-			border-radius: 150px 0px 0px 150px;
-			z-index: 101;
-		}	
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		/*<!--First page-->*/
-			
-			
-		.home h1 {
-			font-size: 200px;	
+			.square {
+				right: 330px;
+				background-color: #D4D4D4;
 			}
 			
-		.home h2 {
-			font-size: 27px;
-			margin-top: 440px;
-			letter-spacing: -2px;
-		}
-		
-		.home h3 {
-			margin-top: 500px;
-			font-size: 27px;
-			letter-spacing: -2px;
-		}
-					
-					
-					
-	/*-------Design 1--------*/
-					
-		.one-design {
-			position: absolute;
-			bottom: 0;
-			margin-bottom: 0px;
+			.square-2 {
+				right: 263px;background-color: #D4D4D4;
+			}
+			.half-circle {
+				right: 154px;
+			}
+			
+			.home h1 {
+				right: 450px;
+				font-size: 450px;
+				letter-spacing: -74px;
+			}
+			
+			.home h2 {
+				z-index: 110;
+			}
+			
+			
+			.one-design {
+				top: 860px;
+			}
+			
+			.one-design h1 {
+				top: -350px;
+			right: 420px;
+				font-size: 450px;
+				
+				
+
 		}
 			
-		.one-design h1 {
 			
-			margin-bottom: -480px;
-			font-size: 285px;
-			margin-left: 540px;
-			font-kerning: 30%;
+			.one-design p {
+				right: 100px;
+				top: 760px;
+				z-index: 106;
+			}
+			
+			.two-design {
+				top: 1700px;
+			}
+			.two-design h1 {
+				top: -350px;
+			right: 490px;
+				font-size: 450px;
+				letter-spacing: -78px;
+				
+
+		}
+			
+			
+			.two-design p {
+				right: 100px;
+				top: 760px;
+				z-index: 106;
+			}
+			
+			
+			
+			.three-design h1 {
+				top: -550px;
+				font-size: 450px;
+				right: 430px;
+			}
+			
+			
+			.three-design p {
+				right: 100px;
+				top: 540px;
+				z-index: 106;
+			}
+			
+			
+			
+			
+			
+			.four-design h1 {
+				top: -1260px;
+			right: 510px;
+				font-size: 450px;
+				letter-spacing: -78px;
+				
+
+		}
+			
+			.four-design h3 {
+				z-index: 106;
+				top: -400px;
+			}
+			
+			.four-design p {
+				right: 100px;
+				top: -140px;
+				z-index: 106;
+			}
+			
+			
+			
+			
+			.four-design {
+				top: 4300px;
+			}
+			
+			.five-design h1 {
+				top: -560px;
+			right: 490px;
+				font-size: 450px;
+				letter-spacing: -78px;
+				
+
+		}
+			
+			.five-design h3 {
+				z-index: 106;
+				
+			}
+			
+			.five-design p {
+				right: 100px;
+				top: 550px;
+				z-index: 106;
+			}
+			
+			
+			
+			
+			.six-design {
+				top: 5300px;
+			}
+			
+				.six-design h1 {
+				top: -560px;
+			right: 490px;
+				font-size: 450px;
+				letter-spacing: -78px;
+				
+
+		}
+			
+			.six-design h3 {
+				z-index: 106;
+			}
+			
+			.six-design p {
+				right: 100px;
+				top: 550px;
+				z-index: 106;
+			}
+			
+			
+			
+			
+			
+			
+			
+			.seven-design h1 {
+				top: -330px;
+			right: 490px;
+				font-size: 450px;
+				letter-spacing: -78px;
+				
+
+		}
+			
+			
+			.seven-design {
+				top: 5950px;
+			}
+			.seven-design h3 {
+				z-index: 106;
+			}
+			
+			.seven-design p {
+				right: 100px;
+				top: 750px;
+				z-index: 106;
+			}
+			
+			
+			
+			
+			
+			.eight-design {
+				top: 6950px;
+			}
+			
+			.eight-design h1 {
+				top: -560px;
+			right: 490px;
+				font-size: 450px;
+				letter-spacing: -78px;
+				
+
+		}
+			
+			.eight-design h3 {
+				z-index: 106;
+			}
+			
+			.eight-design p {
+				right: 100px;
+				top: 550px;
+				z-index: 106;
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			.nine-design h1 {
+				top: -360px;
+			right: 490px;
+				font-size: 450px;
+				letter-spacing: -78px;
+				
+
+		}
+			
+			.nine-design h3 {
+				z-index: 106;
+			}
+			
+			.nine-design p {
+				right: 100px;
+				top: 750px;
+				
+			}
+			
+			
+			
+			
+			
+			
+			.ten-design h1 {
+				top: -720px;
+			right: 440px;
+				font-size: 450px;
+				letter-spacing: -78px;
+				
+
+		}
+			
+			.ten-design h3 {
+				z-index: 106;
+			}
+			
+			.ten-design p {
+				right: 100px;
+				top: 360px;
+				
+			}
+			
+			
 		}
 		
 		
 		
-		.one-design h3 {
-			top: 700px;
-			margin-left: 260px;
-			font-size: 27px;
-			letter-spacing: -1px;
-			z-index: 1;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		@media only screen and (max-width: 534px) {
+			
+		/*	------shapes-----*/
+			
+			.square {
+				background-color: #D4D4D4;
+				right: 115px;
+			}
+			
+			.square-2 {
+				right: 100px;background-color: #D4D4D4;
+			}
+			
+			.half-circle {
+				right: 100px;
+				width: 210px;
+			}
+			
+			.circle-2 {
+		
+				right: 310px;
+				width: 100px;
+				height: 200px;
+			}
+			
+			.circle-3 {
+				right: 20px;
+				width: 80px;
+				height: 150px;
+				margin-top: 70px;
+			}
+			
+			.circle-4 {
+				left: 0;
+				
+			}
+			
+			.circle-5 {
+				width: 90px;
+				height: 180px;
+				bottom: 0;
+				
+			}
+			
+			
+			
+			.home h1 {
+				right: 260px;
+				font-size: 350px;
+				letter-spacing: -60px;
+
 		}
-		
-		.one-design p {
-			font-size: 16px;
-			font-weight: 300;
-			margin-left: 280px;
-			width: 404px;
-			z-index: 105;
+			
+			.home h2 {
+				font-size: 30px;
+				margin-top: 450px;
+			}
+			
+			.home h3 {
+				font-size: 30px;
+			}
+			
+			
+			
+			
+			
+			
+			.one-design {
+				top:780px;
+			}
+			
+			.one-design h1 {
+				top: -150px;
+				right: 285px;
+				font-size: 350px;
+				letter-spacing: -60px;
+
 		}
-		
-		}
-		
-		
-		
-		
-		
-		@media only screen and (max-width: 570px) {
 			
 			.one-design h3 {
-			top: 700px;
-			margin-left: 160px;
-			font-size: 27px;
-			letter-spacing: -1px;
-			z-index: 1;
-		}
+				left: 0;
+				margin-left: 2px;
+				top: 570px;
+				font-size: 30px;
+				z-index: 110;
+			}
 		
-		.one-design p {
-			margin-bottom: -620px;
-			font-size: 12px;
-			font-weight: 300;
+			.one-design p {
+				right: 25px;
+				top: 770px;
+				font-size: 13px;
+				max-width: 270px;
+			}	
 			
-			width: 300px;
-			z-index: 105;
+			
+			
+			
+			
+			
+			
+			.two-design h1 {
+				right: 280px;
+				font-size: 350px;
+				letter-spacing: -60px;
+
 		}
+			
+			.two-design h3 {
+				left: 0;
+				margin-left: 2px;
+				top: 380px;
+				font-size: 30px;
+			}
+		
+			.two-design p {
+				right:25px;
+				top: 570px;
+				font-size: 13px;
+				max-width: 270px;
+			}	
+			
+			
+			
+		
+			.three-design h1 {
+				top: -630px;
+				right: 280px;
+				font-size: 350px;
+				letter-spacing: -60px;
+
+		}
+			
+			.three-design h3 {
+				left: 0;
+				margin-left: 2px;
+				top: 120px;
+				font-size: 30px;
+			}
+		
+			.three-design p {
+				right:25px;
+				top: 310px;
+				font-size: 13px;
+				max-width: 270px;
+			}	
+			
+			
+			
+			
+			.four-design {
+				top: 4200px;
+			}
+			
+			.four-design h1 {
+				right: 290px;
+				font-size: 350px;
+				letter-spacing: -60px;
+
+		}
+			
+			.four-design h3 {
+				left: 0;
+				margin-left: 2px;
+				top: -510px;
+				font-size: 30px;
+			}
+		
+			.four-design p {
+				right:25px;
+				top: -310px;
+				font-size: 13px;
+				max-width: 270px;
+			}		
+			
+			.five-design {
+				top: 3880px;
+			}
+			.five-design h1 {
+				top: -130px;
+				right: 280px;
+				font-size: 350px;
+				letter-spacing: -60px;
+
+		}
+			
+			.five-design h3 {
+				left: 0;
+				margin-left: 4px;
+				top: 600px;
+				font-size: 30px;
+			}
+		
+			.five-design p {
+				right: 25px;
+				
+				top: 770px;
+				font-size: 13px;
+				max-width: 270px;
+			}	
+			
+			
+			.six-design {
+				top: 4800px;
+			}
+			.six-design h1 {
+				top: -130px;
+				right: 280px;
+				font-size: 350px;
+				letter-spacing: -60px;
+
+		}
+			
+			.six-design h3 {
+				left: 0;
+				margin-left: 4px;
+				top: 600px;
+				font-size: 30px;
+			}
+		
+			.six-design p {
+				right: 25px;
+				
+				top: 770px;
+				font-size: 13px;
+				max-width: 270px;
+			}	
+			
+			
+			
+			
+			
+			.seven-design {
+				top: 5800px;
+			}
+			
+			
+			
+		.seven-design h1 {
+				right: 280px;
+				font-size: 350px;
+				letter-spacing: -60px;
+
+		}
+			
+			.seven-design h3 {
+				left: 0;
+				margin-left: 4px;
+				top: 410px;
+				font-size: 30px;
+			}
+		
+			.seven-design p {
+				right:25px;
+				top: 600px;
+				font-size: 13px;
+				max-width: 270px;
+			}		
+			
+			
+			
+			
+			
+			.eight-design {
+				top: 6400px;
+			}
+			.eight-design h1 {
+				top: -130px;
+				right: 280px;
+				font-size: 350px;
+				letter-spacing: -60px;
+
+		}
+			
+			.eight-design h3 {
+				left: 0;
+				margin-left: 4px;
+				top: 600px;
+				font-size: 30px;
+			}
+		
+			.eight-design p {
+				right: 25px;
+				
+				top: 770px;
+				font-size: 13px;
+				max-width: 270px;
+				z-index: 116;
+			}	
+			
+			
+			
+			
+			
+			
+			
+			
+			.nine-design {
+				top: 7300px;
+			}
+		.nine-design h1 {
+				right: 280px;
+			top: -110px;
+				font-size: 350px;
+				letter-spacing: -60px;
+
+		}
+			
+			.nine-design h3 {
+				left: 0;
+				margin-left: 4px;
+				top: 600px;
+				font-size: 30px;
+			}
+		
+			.nine-design p {
+				right:25px;
+				top: 770px;
+				font-size: 13px;
+				max-width: 270px;
+				
+			}	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			.ten-design {
+				top: 8500px;
+			}
+			
+			.ten-design h1 {
+				right: 250px;
+				top: -410px;
+				font-size: 350px;
+				letter-spacing: -60px;
+
+		}
+			
+			.ten-design h3 {
+				left: 0;
+				margin-left: 4px;
+				top: 270px;
+				font-size: 30px;
+			}
+		
+			.ten-design p {
+				right:25px;
+				top: 450px;
+				font-size: 13px;
+				max-width: 270px;
+			}
+			
 		}
 	
 	</style>
