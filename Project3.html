@@ -6,15 +6,49 @@
 	
 	
 	<style>
-	
+			
+		.body {
+			margin-top: 30px;
+			animation-name: background;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-delay: 1.5s;
+		}
+		
+		@-webkit-keyframes background {
+			0% {
+				 background-color: white;
+				
+			}
+			
+			
+			25% {
+			 background-color: #99CAF3;
+				
+				
+				
+			}
+			
+			50% {
+				background-color: white;
+				
+			}
+			
+			
+		}
+		
+		
+		
+		
 		.mainHolder {
 			position: fixed;
     		left: 0px;
     		top: 60px;
-			right: 430px;
+			right: 650px;
 			bottom 0;
     		margin-left: 0px;
 			display: inline-block;
+			
 		}
 		
 	
@@ -24,38 +58,91 @@
 			width: 415.474px;
 			height: 548.8702px;
 			background-color: #D0AC8D;
-			left: 51%;
-    		top: 60px;
+			left: 0;
+    		top: 660px;
+			bottom: 0;
+			right: -435px;
+			margin: auto;
+			transform: translate(1px, 1px)rotate(0deg);
 			border-radius: 40% 40% 47% 47%;
 			position: absolute;
 			z-index: 50;
-			animation-name: skin;
+			animation-name: headSkin;
 			animation-duration: 4s;
 			animation-iteration-count: infinite;
 			animation-delay: 1.5s;
 		}
 		
-		@-webkit-keyframes skin {
+		@-webkit-keyframes headSkin {
 			0% {
-				 background-color: #71B7F2;
-				animation-duration: 4s;
+				 background-color: #D0AC8D;
+				transform: translate(1px,1px )rotate(0deg);
+			}
+			
+			5% {
+				transform: translate(-1px,-3px )rotate(-1deg);
+			}
+			
+			8% {
+				transform: translate(1px,3px )rotate(1deg);
+			}
+			
+			11% {
+				transform: translate(-2px, )rotate(0deg);
+				}
+			
+			13% {
+				transform: translate(1px, )rotate(1deg);
+				}
+			
+			16% {
+				transform: translate(-3px, )rotate(0deg);
+				}
+			
+			18% {
+				transform: translate(2px, )rotate(-1deg);
+			}
+			
+			21% {
+			transform: translate(-1px, )rotate(1deg);
+			}
+			
+			22% {
+				transform: translate(1px, )rotate(0deg);
+			}
+			
+			24% {
+				transform: translate(1px, )rotate(-1deg);
 			}
 			
 			
 			25% {
-			 background-color: #D9BDA5;
-				animation-duration: 2s;
-				
+			 background-color: #71B7F2;
 				
 			}
 			
+			
+			
+			
 			50% {
-				background-color: #D9BDA5;
-				
+				background-color: #D0AC8D;
+				100% {
+			
 			}
+			}
+			
+			
+
+			
+			
+			
+			
+
 			
 			
 		}
+		
+		
 			
 		
 		
@@ -71,7 +158,7 @@
 			bottom: 0;
 			margin: auto;
     		border-style: solid;
-    		border-width: 15px;
+    		border-width: 8px;
     		border-color: #94755A;
    			width: 150px;
    			height: 160px;
@@ -122,7 +209,7 @@
 			bottom: 0;
 			margin: auto;
     		border-style: solid;
-    		border-width: 15px;
+    		border-width: 8px;
     		border-color: #94755A;
    			width: 150px;
    			height: 160px;
@@ -224,6 +311,8 @@
 			animation-delay: 1.5s;
 		}
 		
+		
+		
 		.eyeLeft {
 	position: absolute;
     background-color: white;
@@ -239,21 +328,23 @@
 		}
 		
 		.pupilLeft {
-				position: absolute;
-    background-color: black;
-    top: 582px;
-    left: 0px;
-	right: -250px;
-	bottom: 0;
-	margin: auto;
-    width: 10px;
-    height: 10px;
-			border: solid #135428 12px;
-    border-radius: 300px; z-index: 90;
+			position: absolute;
+    	background-color: black;
+    	top: 582px;
+    	left: 0px;
+		right: -250px;
+		bottom: 0;
+		margin: auto;
+    	width: 10px;
+    	height: 10px;
+		border: solid #0F411F 12px;
+    	border-radius: 300px; z-index: 90;
+		transform: rotate(0deg);
 		animation-name: pupilLeft;
 		animation-duration: 4s;
 		animation-iteration-count: infinite;
 		animation-delay: 1.5s;
+		
 		}
 		
 		@-webkit-keyframes pupilLeft {
@@ -261,19 +352,25 @@
 				width: 10px;
     			height: 10px;
 				top:580px;
+				transform: rotate(0deg);
+				 border: solid #0F411F 12px;
 			}
 			
 			
 			25% {
 				width: 20px;
     			height: 20px;
-				top:570px;
+				top:580px;
+				transform: rotate(-15deg);
+				transform: center center;
+			 border: solid #9CCAD6 12px;
 			}
 			
 			50% {
 				width: 10px;
     			height: 10px;
-				top:580px
+				-webkit-animation: pupilLeft 1.5s ease-in-out 1.5s infinite alternate; 
+				transform: rotate(0deg); border: solid #0F411F 12px;
 			}
 			
 			75% {
@@ -453,7 +550,41 @@
 			bottom: 0;
 			margin: auto;
 			z-index: 60;
+			animation-name: hair;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-delay: 1.5s;
 		}
+		
+		@-webkit-keyframes hair {
+			0% {
+				width: 410px;
+			
+			}
+			
+			
+			25% {
+				width: 400px;
+			
+		
+			}
+			
+			50% {
+				width: 410px;
+			}
+			
+			75% {
+				
+			}
+			
+			100% {
+				
+			}
+		}
+		
+		
+		
+		
 		
 		.hairShadow {
 			width: 330px;
@@ -468,14 +599,47 @@
 			bottom: 0;
 			margin: auto;
 			z-index: 56;
+			animation-name: shadowhair;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-delay: 1.5s;
+		}
+		
+		@-webkit-keyframes shadowhair {
+			0% {
+				width: 330px;
+			top: 230px;
+			}
+			
+			
+			25% {
+				width: 310px;
+			top: 210px;
+		
+			}
+			
+			50% {
+				width: 330px;
+				top: 230px;
+			}
+			
+			75% {
+				
+			}
+			
+			100% {
+				
+			}
 		}
 		
 		
+		
 		.sideHair {
-			width: 95px;
+			width: 100px;
 			height: 125px;
 			background-color: #211805;
-			border-radius: 300px 0 0 300px;
+			
+			border-radius: 300px 0 0 350px;
 			transform: rotate(45deg);
 		    position: absolute;
     		top: 280px;
@@ -484,16 +648,47 @@
 			bottom: 0;
 			margin: auto;
 			z-index: 50;
+			animation-name: sideHair;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-delay: 1.5s;
+		}
+		
+		@-webkit-keyframes sideHair {
+			0% {
+				width: 100px;
+			transform: rotate(45deg);
+			}
+			
+			
+			25% {
+				width: 85px;
+			transform: rotate(40deg);
+		
+			}
+			
+			50% {
+				width: 100px;
+				transform: rotate(45deg);
+			}
+			
+			75% {
+				
+			}
+			
+			100% {
+				
+			}
 		}
 		
 		.sideHair-right {
-			width: 190px;
-			height: 70px;
+			width: 220px;
+			height: 75px;
 			background-color: #211805;
 			border-radius: 50px 50px 10px 0px;
 			transform: rotate(75deg);
 		    position: absolute;
-    		top: 250px;
+    		top: 260px;
     		left: 0px;
 			right: -785px;
 			bottom: 0;
@@ -826,7 +1021,7 @@
 			right: -440px;
 			bottom: 0;
 			margin: auto;
-			z-index: 60;
+			z-index: 80;
 			opacity: 0;
 			animation-name: mouthLine;
 			animation-duration: 4s;
@@ -888,6 +1083,41 @@
 				width: 1px;
 				height: 0px;
 				
+			}
+			5% {
+				transform: translate(-1px, -2px)rotate(-1deg);
+			}
+			
+			8% {
+				transform: translate(1px, 1px)rotate(1deg);
+			}
+			
+			11% {
+				transform: translate(-2px, 1px)rotate(0deg);
+				}
+			
+			13% {
+				transform: translate(1px, -1px)rotate(1deg);
+				}
+			
+			16% {
+				transform: translate(-3px, 1px)rotate(0deg);
+				}
+			
+			18% {
+				transform: translate(3px, 1px)rotate(-1deg);
+			}
+			
+			21% {
+			transform: translate(-1px, -1px)rotate(1deg);
+			}
+			
+			22% {
+				transform: translate(1px, 2px)rotate(0deg);
+			}
+			
+			24% {
+				transform: translate(1px, -2px)rotate(-1deg);
 			}
 			
 			
@@ -1140,11 +1370,11 @@
 		
 		.neck {
 			width: 155px;
-			height: 126px;
+			height: 136px;
 			background-color: #D0AC8D;
 
 		    position: absolute;
-    		top: 1300px;
+    		top: 1290px;
     		left: 0px;
 			right: -430px;
 			bottom: 0;
@@ -1181,11 +1411,11 @@
 		
 		.shadow {
 			width: 155px;
-			height: 70px;
+			height: 80px;
 			background-color: #5F4F41;
 			border-radius: 0px 0 70px 70px ;
 		    position: absolute;
-    		top: 1250px;
+    		top: 1230px;
     		left: 0px;
 			right: -430px;
 			bottom: 0;
@@ -1224,11 +1454,11 @@
       		height: 210px;
       		border-left: 15px solid transparent;
      		 border-right: 15px solid transparent;
-      		border-top: 150px solid #35526C;
+      		border-top: 150px solid #96BBDC;
 		    position: absolute;
     		top: 1100px;
     		left: 0px;
-			right: -750px;
+			right: -740px;
 			bottom: 0;
 			margin: auto;
 			z-index: 0;
@@ -1238,10 +1468,86 @@
 			animation-delay: 1.5s;
 		}
 		
+		.iceShapeside {
+			width: 0px;
+      		height: 210px;
+      		border-left: 15px solid transparent;
+     		 border-right: 15px solid transparent;
+      		border-top: 130px solid #96BBDC;
+		    position: absolute;
+    		top: 1060px;
+    		left: 0px;
+			right: -765px;
+			bottom: 0;
+			margin: auto;
+			z-index: 0;
+			animation-name: ice;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-delay: 1.5s;
+		}
+		
+		.iceShapeside2 {
+			width: 0px;
+      		height: 210px;
+      		border-left: 15px solid transparent;
+     		 border-right: 15px solid transparent;
+      		border-top: 130px solid #96BBDC;
+		    position: absolute;
+    		top: 1060px;
+    		left: 0px;
+			right: -705px;
+			bottom: 0;
+			margin: auto;
+			z-index: 0;
+			animation-name: ice;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-delay: 1.5s;
+		}
+		
+		
+		
 		@-webkit-keyframes ice {
 			0% {
 				 height: 210px;
+			transform: translate(1px, 1px)rotate(0deg);
+			}
 			
+			5% {
+				transform: translate(-1px, -2px)rotate(-1deg);
+			}
+			
+			8% {
+				transform: translate(1px, 1px)rotate(1deg);
+			}
+			
+			11% {
+				transform: translate(2px, 1px)rotate(0deg);
+				}
+			
+			13% {
+				transform: translate(1px, -1px)rotate(1deg);
+				}
+			
+			16% {
+				transform: translate(-3px, 1px)rotate(0deg);
+				}
+			
+			18% {
+				transform: translate(3px, 1px)rotate(-1deg);
+			}
+			
+			21% {
+			transform: translate(-1px, -1px)rotate(1deg);
+			}
+			
+			22% {
+				transform: translate(1px, 2px)rotate(0deg);
+			}
+			
+			24% {
+				transform: translate(1px, 0px)rotate(0deg);
 			}
 			
 			
@@ -1265,7 +1571,7 @@
       		height: 210px;
       		border-left: 15px solid transparent;
      		 border-right: 15px solid transparent;
-      		border-top: 100px solid #35526C;
+      		border-top: 100px solid #96BBDC;
 		    position: absolute;
     		top: 1100px;
     		left: 0px;
@@ -1281,12 +1587,12 @@
 		
 		.iceHair {
 			width: 0px;
-      		height: 120px;
-      		border-left: 15px solid transparent;
-     		 border-right: 15px solid transparent;
-      		border-top: 60px solid #35526C;
+      		height: 90px;
+      		border-left: 10px solid transparent;
+     		 border-right: 10px solid transparent;
+      		border-top: 70px solid #96BBDC;
 		    position: absolute;
-    		top: 335px;
+    		top: 300px;
     		left: 0px;
 			right: -160px;
 			bottom: 0;
@@ -1303,7 +1609,7 @@
       		height: 22px;
       		border-left: 15px solid transparent;
      		 border-right: 15px solid transparent;
-      		border-top: 00px solid #35526C;
+      		border-top: 00px solid #96BBDC;
 		    position: absolute;
     		top: 994px;
     		left: 0px;
@@ -1320,26 +1626,149 @@
 		@-webkit-keyframes iceMouth {
 			0% {
 				 height: 22px;
-				border-top: 00px solid #35526C;
+				border-top: 00px solid #96BBDC;
+				top: 994px;
+				transform: translate(1px, -1px)rotate(1deg);
+			}
+			
+			5% {
+				transform: translate(-1px, -2px)rotate(-1deg);
+			}
+			
+			8% {
+				transform: translate(1px, 1px)rotate(1deg);
+			}
+			
+			11% {
+				transform: translate(2px, 1px)rotate(0deg);
+				}
+			
+			13% {
+				transform: translate(1px, -1px)rotate(1deg);
+				}
+			
+			16% {
+				transform: translate(-3px, 1px)rotate(0deg);
+				}
+			
+			18% {
+				transform: translate(3px, 1px)rotate(-1deg);
+			}
+			
+			21% {
+			transform: translate(-1px, -1px)rotate(1deg);
+			}
+			
+			22% {
+				transform: translate(1px, 2px)rotate(0deg);
+			}
+			
+			24% {
+				transform: translate(1px, -2px)rotate(-1deg);
 			}
 			
 			
 			25% {
-			border-top: 80px solid #35526C;
+			border-top: 80px solid #96BBDC;
 				height: 0px;
-				
+				top: 1000px;
 				
 			}
 			
 			50% {
-				border-top: 00px solid #35526C;
+				border-top: 00px solid #96BBDC;
 				height: 22px;
-				
+				top: 994px;
 			}
 			
 			
 		}
 		
+		.iceShapemouthLeft {
+			width: 0px;
+      		height: 22px;
+      		border-left: 15px solid transparent;
+     		 border-right: 15px solid transparent;
+      		border-top: 00px solid #96BBDC;
+		    position: absolute;
+    		top: 994px;
+    		left: 0px;
+			right: -300px;
+			bottom: 0;
+			margin: auto;
+			z-index: 50;
+			animation-name: iceMouthleft;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-delay: 1.5s;
+		}
+		
+		@-webkit-keyframes iceMouthleft {
+			0% {
+				 height: 22px;
+				border-top: 00px solid #96BBDC;
+				top: 994px;
+			}
+			
+			
+			25% {
+			border-top: 120px solid #96BBDC;
+				height: 0px;
+				top: 1060px;
+				
+			}
+			
+			50% {
+				border-top: 00px solid #96BBDC;
+				height: 22px;
+				top: 994px;
+			}
+			
+			
+		}
+		
+		.iceShapemouthLeft2 {
+			width: 0px;
+      		height: 22px;
+      		border-left: 10px solid transparent;
+     		 border-right: 10px solid transparent;
+      		border-top: 00px solid #96BBDC;
+		    position: absolute;
+    		top: 994px;
+    		left: 0px;
+			right: -330px;
+			bottom: 0;
+			margin: auto;
+			z-index: 50;
+			animation-name: iceMouthleft2;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			animation-delay: 1.5s;
+		}
+		
+		@-webkit-keyframes iceMouthleft2 {
+			0% {
+				 height: 22px;
+				border-top: 00px solid #96BBDC;
+				top: 994px;
+			}
+			
+			
+			25% {
+			border-top: 50px solid #96BBDC;
+				height: 0px;
+				top: 1060px;
+				
+			}
+			
+			50% {
+				border-top: 00px solid #96BBDC;
+				height: 22px;
+				top: 994px;
+			}
+			
+			
+		}
 		
 	
 	</style>
@@ -1363,12 +1792,14 @@
 		<div class="eyeLeft"></div>
 		<div class="eyeRight">
 		</div>
+		<div class="eyeLid-top"></div>
 		<div class="eyeLid">
 		</div>
 		<div class="eyeLid2"></div>
 		<div class="eyeShadowL"></div>
 		<div class="eyeShadow"></div>
 		<div class="mouth"></div>
+		
 		<div class="hair"></div>
 		<div class="hairShadow"></div>
 		<div class="sideHair">
@@ -1400,8 +1831,12 @@
 		<div class="teeth-13"></div>
 		<div class="iceHair"></div>
 		<div class="iceShape"></div>
+		<div class="iceShapeside"></div>
+		<div class="iceShapeside2"></div>
 		<div class="iceShape2"></div>
 		<div class="iceShapemouth"></div>
+		<div class="iceShapemouthLeft"></div>
+		<div class="iceShapemouthLeft2"></div>
 	</div>
 </body>
 </html>
