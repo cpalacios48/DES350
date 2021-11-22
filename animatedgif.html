@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animatedgif</title>
+	
+	
+	<style>
+	 
+		body {
+			background-color: #282F1D;
+			margin: 0px;
+			padding: 0px;
+		}
+	
+		.card {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 40%;
+			height: 90vh;
+			background: url("../Project 4/greynationalpark-30.jpg")no-repeat center;
+			background-size: contain;
+		}
+	
+		.card:hover {
+			background: url("../Project 4/NationalParkfinal_2.gif") no-repeat center;
+			background-size: contain;
+		}
+		
+		
+		#preload {
+			background: url("../Project 4/NationalParkfinal_2.gif")-9999px -9999px;
+		}
+		
+	</style>
+	
+	
+	
+</head>
+
+<body>
+	
+	<div class="card"></div>
+	<div id="preload"></div>
+</body>
+</html>
