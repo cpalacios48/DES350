@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ParalloxExercise</title>
+	
+	<style>
+	
+		body {
+			background-color: #fff;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			line-height: 1.4m;
+			margin-left: 10%;
+			nargin-top: 5%;
+		}
+		
+		.squareElement {
+			display: inline-block;
+			float: left;
+			background: #ddd;
+			text-align: center;
+			line-height: 205px;
+			width: 29%;
+			margin-right: 1%;
+			margin-bottom: 5%;
+			height: 405px;
+			border-radius: 9px;
+		}
+	
+	</style>
+</head>
+
+<body>
+	
+	<h1> A CSS Grid Exercise </h1>
+	
+	<div class="squareElement rellax">Number 1</div>
+	<div class="squareElement rellax">Number 2</div>
+	<div class="squareElement rellax">Number 3</div>
+	
+	<div class="squareElement">Number 1</div>
+	<div class="squareElement">Number 2</div>
+	<div class="squareElement">Number 3</div>
+	
+	<div class="squareElement">Number 1</div>
+	<div class="squareElement">Number 2</div>
+	<div class="squareElement">Number 3</div>
+	
+	
+	 <script type="text/javascript" src="rellax.js"></script>
+  <script type="text/javascript" src="option.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax', {
+      // center: true
+      callback: function (position) {
+        // callback every position change
+        console.log(position);
+      },
+      breakpoints: [576, 768, 1024]
+    });
+  </script>
+</body>
+</html>
